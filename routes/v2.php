@@ -59,3 +59,33 @@ Route::get('/useryou', function (Request $request) {
 // Controllers
 
 // Route::get('/users',[UserController::class,'index']);
+
+Route::post('/useryou', function (Request $request) {
+    // ... 
+    return $request->name . ' - ' . $request->email .  ' - ' . $request->age . " post";
+    
+});
+
+Route::put('/useryou', function (Request $request) {
+    // ... 
+    return $request->name . ' - ' . $request->email .  ' - ' . $request->age . " put";
+    
+});
+
+Route::patch('/useryou', function (Request $request) {
+    // ... 
+    return $request->name . ' - ' . $request->email .  ' - ' . $request->age . " patch";
+    
+});
+
+Route::delete('/useryou', function (Request $request) {
+    // ... 
+    return $request->name . ' - ' . $request->email .  ' - ' . $request->age . " delete";
+    
+});
+
+Route::options('/useryou', function (Request $request) {
+    // ... 
+    return $request->name . ' - ' . $request->email .  ' - ' . $request->age . " options";
+    
+});
